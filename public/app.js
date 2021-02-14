@@ -72,14 +72,14 @@ const contenidoChat=(user)=> {
                 if(doc.data().uid===user.uid){
                     Contenido_Protegido.innerHTML += /*html*/ `
                         <div class="d-flex justify-content-end">
-                            <span class="badge rounded-pill bg-primary">${doc.data().texto}</span>
+                            <span class="badge rounded-pill bg-dark ">${doc.data().texto}</span>
                         </div>
                     `
                 }else{
                     Contenido_Protegido.innerHTML += /*html*/`
-                    <div class="d-flex justify-content-start">
-                        <span class="badge rounded-pill bg-secondary">${doc.data().texto}</span>
-                    </div>
+                        <div class="d-flex justify-content-start">
+                            <span class="badge rounded-pill bg-white text-dark">${doc.data().texto}</span>
+                        </div>
                     `
                 }
                 Contenido_Protegido.scrollTop=Contenido_Protegido.scrollHeight
