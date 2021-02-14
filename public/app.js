@@ -8,7 +8,7 @@ firebase.auth().onAuthStateChanged( (user) => {
     if(user){
         console.log(user)
         botones.innerHTML=/*html*/ `
-            <button class="btn btn-outline-danger" id='CerrarSecion'>Cerrar Seción</button>
+            <button class="btn btn-outline-danger" id='CerrarSecion'>Cerrar Sesión</button>
         `  
         nombreusuario.innerHTML= user.displayName   
         cerraSecion()
@@ -21,7 +21,7 @@ firebase.auth().onAuthStateChanged( (user) => {
             <button class="btn btn-outline-success mr-2" id='Acceder'>Acceder</button>
         `
         Contenido_Protegido.innerHTML=/*html*/`
-            <p class="text-center lead mt-5">Debes Loggearte primero, ok? </p>
+            <p class="text-center lead mt-5 text-white fw-bold fs-4">Debes Loggearte primero, ok? </p>
         `
         iniciarSecion()
         nombreusuario.innerHTML= 'Chat'
